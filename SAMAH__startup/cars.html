@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AUTOBAHN</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/hafsa.css">
+    <link rel="stylesheet" href="css/cars.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- **************************Navbar************************* -->
+    <div class="hafsa1">
+        <div id="navbar"> 
+
+        </div>
+        <img src="img/pic.png" alt="pic">
+    </div>
+        <section class="featured " id="featured">
+            <h2 class="section__title">
+                Featured Luxury Cars
+            </h2>
+
+            <div class="search-bar">
+                <input type="text" id="search"  placeholder="Search cars...">
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="featured__container container">
+                <ul class="featured__filters">
+                    <li class="featured__item " >
+                        <button class="featured__item active-featured" id="all" data-filter="all">
+                            <span>All</span>
+                        </button>
+                    </li>
+                    <li class="featured__item ">
+                        <button value="tesla" class="barndBtn featured__item" data-filter=".tesla">
+                            <img src="img/logo3.png" alt="">
+                        </button>
+                    </li>
+                    <li class="featured__item ">
+                        <button value="audi" class=" barndBtn featured__item" data-filter=".audi">
+                            <img src="img/logo2.png" alt="">
+                        </button>
+                    </li>
+                    <li class="featured__item ">
+                        <button value="porsche" class="barndBtn featured__item" data-filter=".porsche">
+                            <img src="img/logo1.png" alt="">
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="carItems featured__content grid" id="carItems">
+                 <!----------------display cars ------------------>
+                   
+                </div>
+            </div>
+      
+        </section>
+           
+        <div style="margin-bottom: 40px;">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination " style="margin: auto;" id="pagi">
+                    
+                </ul>
+              </nav>
+        </div>
+
+        <div id="footer"></div>
+        <script src="Components/navBar.js"></script>
+        <script src="Components/footer.js"></script>
+        <script src="js/cars.js"></script>
+</body>
+
+</html>
